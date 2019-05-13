@@ -1,0 +1,144 @@
+\pagestyle{fancy}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\section{Spécification des besoins}
+	\subsection{Identification des acteurs}
+	On entend par acteur, un humain, une machine ou un système qui ne fait pas partie de la solution à réaliser mais qui participe à son fonctionnement général par une interaction. Dans notre cas, nous aurons typiquement des acteurs humains qui sont des employés et du superviseur (Voir tableau 2.1).
+	
+\begin{table}[!ht]
+
+		\begin{tabular}{|c|l|}
+		\hline
+		\textbf{Acteur} & \textbf{Rôle} \\
+		\hline
+		Employé & L'employé aura accès aux fonctionnalités du logiciel après authentification\\
+		\hline
+		Superviseur & En plus d'avoir aura accès aux fonctionnalités du logiciel il pourra gérer\\
+		& la bonne application des consignes\\
+		\hline
+		\end{tabular}
+		\caption{Les acteurs du système}
+	\end{table}
+	
+	\subsection{Modélisation du contexte}
+	La figure 2.1 représente les interactions entre le système et les acteurs qui y sont impliqués :
+	
+	\begin{figure}[!h]
+		\center
+			\includegraphics[scale=1.2]{images/DC}
+			\caption{Diagramme de contexte du système à réaliser.}
+	\end{figure}
+	
+	
+	\clearpage
+	\subsection{Identifications des cas d’utilisation}
+	Le Cas d'utilisation est une description des interactions qui permettront à l'acteur d'atteindre son objectif en utilisant le système \cite{UML}. Le tableau 2.2 résume les cas d’utilisations du système à réaliser :\\
+	\begin{table}[!h]
+	
+  	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\textbf{N}& \multicolumn{2}{|c|}{\textbf{Cas d’utilisation}} & \textbf{Acteur}\\
+	\hline
+	1 & \multicolumn{2}{|c|} {S'authentifier} & \\
+	\cline{1-3}
+	2 & \multicolumn{2}{|c|} {Saisie des caractéristiques d'articles lors du chargement} & Employé/Superviseur\\
+	\cline{1-3}
+	3 & \multicolumn{2}{|c|} {Saisie des caractéristiques d'articles lors du déchargement} & \\
+	\hline
+	4 & \multicolumn{2}{|c|} {Gérer les employés} & Superviseur\\
+	\hline
+	\end{tabular}
+	\caption{Cas d’utilisation du système à réaliser}
+\end{center}
+\end{table}
+\subsection{Diagramme de cas d'utilisation}
+	\begin{figure}[!h]
+		\center
+			\includegraphics[scale=0.91]{images/DCD}
+			\caption{Diagramme de contexte du système à réaliser.}
+	\end{figure}
+	\clearpage
+	
+	\section{Analyse des besoins}
+	
+\subsection{Description des cas d'utilisation}
+	Les diagrammes réalisés jusqu'à maintenant (diagramme de contexte, diagramme de cas d'utilisation) nous ont permis de découvrir petit à petit les fonctionnalités que l'on devrait avoir dans le futur logiciel.
+	
+	Nous allons désormais parler de l'interaction entre les acteurs et le système : il s'agit de décrire la chronologie des actions qui devront être réalisées par les acteurs et par le système lui-même. Cette description va nous permettre :
+	
+\begin{enumerate}[label=\textbullet]
+	\item clarifier le déroulement de la fonctionnalité.
+	\item décrire la chronologie des actions qui devront être réalisées.
+	\item d'identifier les parties redondantes pour en déduire des cas d'utilisation plus précises qui seront utilisées par inclusion, extension ou généralisation/spécialisation. Et oui, dans ce cas nous réaliserons des itérations sur les diagrammes de cas d'utilisation.
+	\item d'indiquer d'éventuelles contraintes déjà connues et dont les développeurs vont devoir tenir compte lors de la réalisation du logiciel. Ces contraintes peuvent être de nature diverse.
+	\end{enumerate}
+	
+	\subsubsection*{Cas d'utilisation <<S'authentifier>> :}
+	\textbf{Cas d'utilisation} :  <S'authentifier>
+	
+	\textbf{Acteurs} :  <Employé,Superviseur>
+	
+	\textbf{Objectif} : -Il permet à l'acteur de s'authentifier.
+	
+	\textbf{[Pré-condition :]}  -Les identifiants de l'acteur doivent exister dans la base de donnée.
+	
+	\textbf{[Post-condition :]}  -Acteur Identifié	
+	
+	\textbf{Scénario nominal :}  1. L'acteur ouvre le logiciel.
+	  
+    2. Le système affiche la fenêtre d'authentification
+      
+    3. L'acteur saisit les identifiants
+    
+    4. Le système vérifie l'existence des données
+     
+    5. Le système identifie l'acteur.  
+    \clearpage
+    \textbf{Scénario alternatif :} \textit{A. Erreur d'authentification :} identifiants non valides. 
+    
+Cet enchaînement démarre au point 4.
+   
+5. Le système affiche un message d'erreur. 
+
+Le scénario reprend au point 2.
+
+\textbf{[Contraintes non fonctionnelles :] } <Confidentialité> 
+    
+    \subsubsection*{Cas d'utilisation <<Saisie des caractéristiques d'articles lors du déchargement>> :}
+	\textbf{Cas d'utilisation} :  <Saisie des caractéristiques d'articles lors du déchargement>
+	
+	\textbf{Acteurs} :  <Employé,Superviseur>
+	
+	\textbf{Objectif} : - Il permet à l'acteur de 	de générer une liste où figure un emplacement 	pour 
+	
+	chaque article saisi.
+	
+	\textbf{[Pré-condition :]}  - L'article doit 	exister dans la base de donnée.
+	
+	\textbf{[Post-condition :]}  -Génère une 			liste où figure un emplacement pour chaque 
+	
+	article saisi.
+	
+	\textbf{Scénario nominal :} 1. L'acteur 			saisit les caractéristique de l'article.
+    
+    2. Le système vérifie l'existence de 				l'article.
+    
+     3. Le système recherche un emplacement dans 		un stock.
+     
+    4. Le système affiche la liste où figure un emplacement pour chaque article.  
+    
+    \textbf{Scénario alternatif :} \textit{A. Erreur article non-existant :} caractéristique invalide. 
+    
+Cet enchaînement démarre au point 2.
+   
+5. Le système affiche un message d'erreur. 
+
+Le scénario reprend au point 1.
+
+\textbf{[Contraintes non fonctionnelles :] } <Temps de réponse>
+
