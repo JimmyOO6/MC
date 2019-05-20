@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.15)  13 MAY 2019 03:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.15)  20 MAY 2019 03:43
 entering extended mode
 **./pageGarde.tex
 (pageGarde.tex
@@ -1599,7 +1599,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count349
 \@quotereset=\count350
-(pageGarde.aux (introduction.aux) (main.aux) (conclusion.aux) (abstract.aux))
+(pageGarde.aux (introduction.aux) (main.aux) (conclusion.aux))
 \openout1 = `pageGarde.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
@@ -1746,32 +1746,32 @@ l.250 \include{introduction}
 \openout2 = `main.aux'.
 
  (main.tex
-Overfull \hbox (6.07066pt too wide) in paragraph at lines 14--24
+Overfull \hbox (24.33981pt too wide) in paragraph at lines 14--28
 [][] 
  []
 
-<images/DC.png, id=81, 239.2137pt x 152.4897pt>
+<images/DC.png, id=81, 405.4347pt x 152.4897pt>
 File: images/DC.png Graphic file (type png)
 <use images/DC.png>
-Package pdftex.def Info: images/DC.png  used on input line 32.
-(pdftex.def)             Requested size: 287.055pt x 182.98671pt.
+Package pdftex.def Info: images/DC.png  used on input line 36.
+(pdftex.def)             Requested size: 486.5192pt x 182.98671pt.
+
+Overfull \hbox (25.79796pt too wide) in paragraph at lines 36--37
+ [] 
+ []
+
 [2
 
 
  <./images/DC.png (PNG copy)>]
 
-LaTeX Warning: Citation 'UML' on page 3 undefined on input line 39.
+LaTeX Warning: Citation 'UML' on page 3 undefined on input line 43.
 
-<images/DCD.png, id=90, 509.5035pt x 257.2812pt>
+<images/DCD.png, id=90, 615.0177pt x 437.9562pt>
 File: images/DCD.png Graphic file (type png)
 <use images/DCD.png>
-Package pdftex.def Info: images/DCD.png  used on input line 62.
-(pdftex.def)             Requested size: 463.6489pt x 234.12627pt.
-
-Overfull \hbox (2.92766pt too wide) in paragraph at lines 62--63
- [] 
- []
-
+Package pdftex.def Info: images/DCD.png  used on input line 66.
+(pdftex.def)             Requested size: 399.75676pt x 284.66815pt.
 [3
 
  <./images/DCD.png (PNG copy)>] [4
@@ -1799,6 +1799,9 @@ Package rerunfilecheck Info: File `pageGarde.out' has not changed.
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                pageGarde
 (biblatex)                and rerun LaTeX afterwards.
@@ -1808,10 +1811,10 @@ Package logreq Info: Writing requests to 'pageGarde.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38661 strings out of 493305
- 889100 string characters out of 3129802
- 1445028 words of memory out of 3000000
- 41504 multiletter control sequences out of 15000+200000
+ 38656 strings out of 493305
+ 888837 string characters out of 3129802
+ 1442508 words of memory out of 3000000
+ 41502 multiletter control sequences out of 15000+200000
  20728 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,11n,128p,800b,1798s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1830,7 +1833,7 @@ pk> <C:\Users\Jimmy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 r\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Jimmy\AppData\Local\MiKTeX\2.9\font
 s\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Users/Jimmy/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pageGarde.pdf (8 pages, 280319 bytes).
+Output written on pageGarde.pdf (8 pages, 348866 bytes).
 PDF statistics:
  497 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
